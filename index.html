@@ -90,7 +90,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <img src="images/Grape.png" alt="logo" style="width: 100px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+            <img src="grape.png" alt="logo" style="width: 100px; height: auto; margin-bottom: 10px; margin-top: 10px;">
             <h3>Add Task</h3>
             <input type="text" id="taskInput" placeholder="Enter your task">
             <input type="datetime-local" id="dueDate">
@@ -272,10 +272,11 @@
 
 // Placeholder for updating points and stars
 function updatePointsAndStars() {
-    points += 10; // 完了したタスクごとにポイントを加算
-    stars += 1;  // 完了したタスクごとにスターを加算
+    // Example: You can add logic here to update points and stars based on task completion.
+    points += 10; // Add 10 points for each task completed
+    stars += 1;  // Add 1 star for each task completed
 
-    // ポイントとスターの表示を更新
+    // Update points and stars display
     document.getElementById("points").textContent = points;
     document.getElementById("stars").textContent = stars;
 }
